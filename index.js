@@ -6,19 +6,19 @@ class Dish {
   }
 }
 
-// Menu Class - Manages the collection of dishes
+
 class Menu {
   constructor() {
-    this.dishes = []; // An array to hold the dishes
+    this.dishes = []; 
   }
 
-  // Add a new dish to the menu
+  
   addDish(dish) {
     this.dishes.push(dish);
     console.log(`Dish "${dish.name}" has been added to the menu.`);
   }
 
-  // View all dishes in the menu
+  
   viewMenu() {
     if (this.dishes.length === 0) {
       console.log("The menu is currently empty.");
@@ -32,7 +32,7 @@ class Menu {
     });
   }
 
-  // Delete a dish from the menu by name
+  
   deleteDish(dishName) {
     const index = this.dishes.findIndex(
       (dish) => dish.name.toLowerCase() === dishName.toLowerCase()
